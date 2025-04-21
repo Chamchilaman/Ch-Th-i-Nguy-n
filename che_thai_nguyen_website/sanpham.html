@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+  <title>Sản phẩm</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f9f5;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .banner {
+      background-image: url('images/Nền trang chủ phần đầu.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner h1 {
+      color: white;
+      font-size: 42px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.3);
+      padding: 12px 20px;
+      border-radius: 12px;
+    }
+
+    .main {
+      display: flex;
+      min-height: 80vh;
+    }
+
+    .sidebar {
+      flex-shrink: 0;
+      width: 240px;
+      background: linear-gradient(180deg, #d0f0c0, #a8ddb5);
+      padding: 25px 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 16px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #1b3f1b;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 10px 14px;
+      border-radius: 10px;
+      display: block;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #ffffff;
+      transform: translateX(4px);
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .product {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .product-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #336633;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h1>Các sản phẩm Chè Thái Nguyên</h1>
+  </div>
+
+  <div class="main">
+    <div class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="Trangchinh.html">🏠 Trang chủ</a></li>
+        <li><a href="sanpham.html">🍃 Sản phẩm</a></li>
+        <li><a href="lienhe.html">☎️ Liên hệ</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/che_tom_non.jpg" alt="Chè tôm nõn">
+          <div class="product-name">Chè tôm nõn</div>
+        </div>
+        <div class="product">
+          <img src="images/tra_dinh_uop_sen_ngoc.jpg" alt="Trà đinh ướp sen ngọc">
+          <div class="product-name">Trà đinh ướp sen ngọc</div>
+        </div>
+        <div class="product">
+          <img src="images/tra_dinh.jpg" alt="Trà đinh">
+          <div class="product-name">Trà đinh</div>
+        </div>
+        <div class="product">
+          <img src="images/tra_uop_hoa.jpg" alt="Trà ướp hoa">
+          <div class="product-name">Trà ướp hoa</div>
+        </div>
+        <div class="product">
+          <img src="images/loc_dinh_tra.jpg" alt="Lộc đinh trà">
+          <div class="product-name">Lộc đinh trà</div>
+        </div>
+        <div class="product">
+          <img src="images/tuyet_huong_tra.jpg" alt="Tuyết Hương trà">
+          <div class="product-name">Tuyết Hương trà</div>
+        </div>
+        <div class="product">
+          <img src="images/che_thinh_an.jpg" alt="Chè Thịnh An tôm nõn">
+          <div class="product-name">Chè Thịnh An tôm nõn</div>
+        </div>
+        <div class="product">
+          <img src="images/giot_ngoc_tra.jpg" alt="Giọt ngọc trà">
+          <div class="product-name">Giọt ngọc trà</div>
+        </div>
+        <div class="product">
+          <img src="images/tam_tra.jpg" alt="Tâm trà">
+          <div class="product-name">Tâm trà</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+  <title>Liên hệ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f9f5;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .banner {
+      background-image: url('images/Nền trang chủ phần đầu.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner h1 {
+      color: white;
+      font-size: 42px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.3);
+      padding: 12px 20px;
+      border-radius: 12px;
+    }
+
+    .main {
+      display: flex;
+      min-height: 80vh;
+    }
+
+    .sidebar {
+      flex-shrink: 0;
+      width: 240px;
+      background: linear-gradient(180deg, #d0f0c0, #a8ddb5);
+      padding: 25px 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 16px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #1b3f1b;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 10px 14px;
+      border-radius: 10px;
+      display: block;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #ffffff;
+      transform: translateX(4px);
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-box {
+      background-color: white;
+      border-radius: 16px;
+      padding: 30px 40px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      color: #336633;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .contact-box p {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #4caf50;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-box a:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <h1>Liên hệ với chúng tôi</h1>
+  </div>
+
+  <div class="main">
+    <div class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="Trangchinh.html">🏠 Trang chủ</a></li>
+        <li><a href="sanpham.html">🍃 Sản phẩm</a></li>
+        <li><a href="lienhe.html">☎️ Liên hệ</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="contact-box">
+        <h2>Thông tin liên hệ</h2>
+        <p>📧 Email: <strong>12345leducanh54321@gmail.com</strong></p>
+        <p>📞 Điện thoại: <strong>0355 191 177</strong></p>
+        <p>📍 Địa chỉ: <strong>Yên Đổ, Phú Lương, Thái Nguyên</strong></p>
+        <a href="index.html">⬅️ Quay lại Trang chủ</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
